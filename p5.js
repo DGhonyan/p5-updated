@@ -65664,7 +65664,7 @@
 						w = parseFloat(args[2]),
 						h = parseFloat(args[3]);
 
-						window.parent.p5Used('ellipse', [x, y, w, h]);
+						window.parent.p5Used('ellipse', [args[0], args[1], args[2], args[3]]);
 
 						if (doFill && !doStroke) {
 							if (this._getFill() === styleEmpty) {
