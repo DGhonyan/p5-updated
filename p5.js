@@ -1,5 +1,7 @@
 /*! p5.js v0.10.2 February 29, 2020 */
 (function (f) {
+	const p5Used = window.parent.p5Used;
+
 	if (typeof exports === 'object' && typeof module !== 'undefined') {
 		module.exports = f();
 	} else if (typeof define === 'function' && define.amd) {
@@ -65656,7 +65658,6 @@
 					};
 
 					_main.default.Renderer2D.prototype.ellipse = function (args) {
-						console.log("axxxxxxxx");
 						var ctx = this.drawingContext;
 						var doFill = this._doFill,
 						doStroke = this._doStroke;
